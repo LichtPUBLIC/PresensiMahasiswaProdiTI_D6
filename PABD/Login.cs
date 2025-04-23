@@ -12,7 +12,7 @@ namespace PABD
         public Login()
         {
             InitializeComponent();
-            btnLogin.Click += btnLogin_Click;
+            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -40,9 +40,8 @@ namespace PABD
 
                     if (count > 0)
                     {
-                        // Login berhasil
                         MessageBox.Show("Login berhasil!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.Hide();
+                        this.Hide(); // Jangan close, supaya bisa balik dari logout
                         Dashboard dashboard = new Dashboard();
                         dashboard.Show();
                     }
@@ -56,21 +55,6 @@ namespace PABD
                     MessageBox.Show("Error saat login: " + ex.Message);
                 }
             }
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLogin_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -34,6 +34,7 @@
             this.btnPresensi = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDataMahasiswa
@@ -101,11 +102,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "PILIH KATEGORI";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.SystemColors.Info;
+            this.btnLogout.Location = new System.Drawing.Point(311, 335);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(192, 33);
+            this.btnLogout.TabIndex = 10;
+            this.btnLogout.Text = "LOGOUT";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPresensi);
@@ -127,5 +140,6 @@
         private System.Windows.Forms.Button btnPresensi;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

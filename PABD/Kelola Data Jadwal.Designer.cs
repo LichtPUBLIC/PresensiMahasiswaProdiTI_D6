@@ -43,6 +43,7 @@
             this.dtpMulai = new System.Windows.Forms.DateTimePicker();
             this.dtpSelesai = new System.Windows.Forms.DateTimePicker();
             this.cmbHari = new System.Windows.Forms.ComboBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -186,11 +187,22 @@
             this.cmbHari.TabIndex = 17;
             this.cmbHari.SelectedIndexChanged += new System.EventHandler(this.dtpHari_SelectedIndexChanged);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(24, 23);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Kelola_Data_Jadwal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.cmbHari);
             this.Controls.Add(this.dtpSelesai);
             this.Controls.Add(this.dtpMulai);
@@ -232,5 +244,6 @@
         private System.Windows.Forms.DateTimePicker dtpMulai;
         private System.Windows.Forms.DateTimePicker dtpSelesai;
         private System.Windows.Forms.ComboBox cmbHari;
+        private System.Windows.Forms.Button btnBack;
     }
 }

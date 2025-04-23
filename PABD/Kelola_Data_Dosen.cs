@@ -157,5 +157,12 @@ namespace PABD
                 txtNama.Text = row.Cells["Nama Dosen"].Value.ToString();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close(); // atau this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+        }
     }
 }

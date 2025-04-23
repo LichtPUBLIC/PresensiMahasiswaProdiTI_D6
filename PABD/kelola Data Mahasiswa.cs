@@ -163,5 +163,12 @@ namespace PABD
                 txtSemester.Text = row.Cells["Semester"].Value.ToString();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close(); // atau this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+        }
     }
 }

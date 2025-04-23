@@ -41,6 +41,7 @@
             this.btnRefres = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDosen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,11 +163,22 @@
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(28, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 13;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Kelola_Data_Dosen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnRefres);
@@ -204,5 +216,6 @@
         private System.Windows.Forms.Button btnRefres;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnBack;
     }
 }

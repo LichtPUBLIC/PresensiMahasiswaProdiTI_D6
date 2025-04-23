@@ -43,6 +43,7 @@
             this.txtNIM = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.dtpTanggal = new System.Windows.Forms.DateTimePicker();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPresensi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,11 +182,22 @@
             this.dtpTanggal.Size = new System.Drawing.Size(200, 20);
             this.dtpTanggal.TabIndex = 27;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(31, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Kelola_Data_Presensi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dtpTanggal);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.txtNIM);
@@ -227,5 +239,6 @@
         private System.Windows.Forms.TextBox txtNIM;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.DateTimePicker dtpTanggal;
+        private System.Windows.Forms.Button btnBack;
     }
 }

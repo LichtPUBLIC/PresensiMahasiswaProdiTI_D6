@@ -39,6 +39,7 @@
             this.btnUbah = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvMataKuliah = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMataKuliah)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,11 +145,22 @@
             this.dgvMataKuliah.TabIndex = 10;
             this.dgvMataKuliah.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMataKuliah_CellContentClick);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(30, 29);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 11;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // kelola_Data_Matakuliah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dgvMataKuliah);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnUbah);
@@ -182,5 +194,6 @@
         private System.Windows.Forms.Button btnUbah;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridView dgvMataKuliah;
+        private System.Windows.Forms.Button btnBack;
     }
 }

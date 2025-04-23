@@ -80,7 +80,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label3
             // 
@@ -91,7 +91,6 @@
             this.label3.Size = new System.Drawing.Size(448, 40);
             this.label3.TabIndex = 5;
             this.label3.Text = "== Halaman Login Dosen ==";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Login
             // 
@@ -109,7 +108,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
+            //this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

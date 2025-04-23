@@ -43,6 +43,7 @@
             this.btnUbah = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,11 +192,22 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click_1);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(27, 25);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // kelola_Data_Mahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 466);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnUbah);
@@ -237,5 +249,6 @@
         private System.Windows.Forms.Button btnUbah;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnBack;
     }
 }
