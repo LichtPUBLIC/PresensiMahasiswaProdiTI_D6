@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtIdPresensi = new System.Windows.Forms.TextBox();
             this.btnRefres = new System.Windows.Forms.Button();
             this.txtIDJadwal = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,13 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPresensi)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtIdPresensi
-            // 
-            this.txtIdPresensi.Location = new System.Drawing.Point(208, 52);
-            this.txtIdPresensi.Name = "txtIdPresensi";
-            this.txtIdPresensi.Size = new System.Drawing.Size(100, 20);
-            this.txtIdPresensi.TabIndex = 0;
-            // 
             // btnRefres
             // 
             this.btnRefres.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -67,24 +58,15 @@
             // 
             // txtIDJadwal
             // 
-            this.txtIDJadwal.Location = new System.Drawing.Point(208, 224);
+            this.txtIDJadwal.Location = new System.Drawing.Point(222, 204);
             this.txtIDJadwal.Name = "txtIDJadwal";
             this.txtIDJadwal.Size = new System.Drawing.Size(100, 20);
             this.txtIDJadwal.TabIndex = 14;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "ID Presensi";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(156, 97);
+            this.label2.Location = new System.Drawing.Point(170, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 16;
@@ -93,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 139);
+            this.label3.Location = new System.Drawing.Point(179, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 17;
@@ -102,7 +84,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 227);
+            this.label5.Location = new System.Drawing.Point(162, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 19;
@@ -116,6 +98,7 @@
             this.dgvPresensi.Name = "dgvPresensi";
             this.dgvPresensi.Size = new System.Drawing.Size(681, 146);
             this.dgvPresensi.TabIndex = 20;
+            this.dgvPresensi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPresensi_CellContentClick);
             // 
             // btnEdit
             // 
@@ -153,7 +136,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(177, 180);
+            this.label4.Location = new System.Drawing.Point(191, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 13);
             this.label4.TabIndex = 24;
@@ -161,7 +144,7 @@
             // 
             // txtNIM
             // 
-            this.txtNIM.Location = new System.Drawing.Point(208, 177);
+            this.txtNIM.Location = new System.Drawing.Point(222, 157);
             this.txtNIM.Name = "txtNIM";
             this.txtNIM.Size = new System.Drawing.Size(100, 20);
             this.txtNIM.TabIndex = 25;
@@ -169,7 +152,7 @@
             // cmbStatus
             // 
             this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(208, 136);
+            this.cmbStatus.Location = new System.Drawing.Point(222, 116);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(121, 21);
             this.cmbStatus.TabIndex = 26;
@@ -177,7 +160,7 @@
             // 
             // dtpTanggal
             // 
-            this.dtpTanggal.Location = new System.Drawing.Point(208, 91);
+            this.dtpTanggal.Location = new System.Drawing.Point(222, 71);
             this.dtpTanggal.Name = "dtpTanggal";
             this.dtpTanggal.Size = new System.Drawing.Size(200, 20);
             this.dtpTanggal.TabIndex = 27;
@@ -209,10 +192,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIDJadwal);
             this.Controls.Add(this.btnRefres);
-            this.Controls.Add(this.txtIdPresensi);
             this.Name = "Kelola_Data_Presensi";
             this.Text = "Kelola_Data_Presensi";
             this.Load += new System.EventHandler(this.Kelola_Data_Presensi_Load);
@@ -223,11 +204,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtIdPresensi;
         private System.Windows.Forms.Button btnRefres;
         private System.Windows.Forms.TextBox txtIDJadwal;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;

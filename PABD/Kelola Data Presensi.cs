@@ -45,7 +45,7 @@ namespace PABD
 
         private void ClearForm()
         {
-            txtIdPresensi.Clear();
+        
             txtNIM.Clear();
             txtIDJadwal.Clear();
             cmbStatus.SelectedIndex = 0;
@@ -104,11 +104,6 @@ namespace PABD
 
         private void btnEdit_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtIdPresensi.Text))
-            {
-                MessageBox.Show("Pilih data yang akan diedit.");
-                return;
-            }
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -121,7 +116,7 @@ namespace PABD
                     cmd.Parameters.AddWithValue("@status", cmbStatus.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@nim", txtNIM.Text.Trim());
                     cmd.Parameters.AddWithValue("@id_jadwal", txtIDJadwal.Text.Trim());
-                    cmd.Parameters.AddWithValue("@id_presensi", txtIdPresensi.Text.Trim());
+                    
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil diperbarui.");
                     LoadData();
@@ -136,11 +131,7 @@ namespace PABD
 
         private void btnHapus_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtIdPresensi.Text))
-            {
-                MessageBox.Show("Pilih data yang akan dihapus.");
-                return;
-            }
+           
 
             DialogResult result = MessageBox.Show("Yakin ingin menghapus data?", "Konfirmasi", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
@@ -152,7 +143,7 @@ namespace PABD
                         conn.Open();
                         string query = "DELETE FROM Presensi WHERE id_presensi = @id_presensi";
                         SqlCommand cmd = new SqlCommand(query, conn);
-                        cmd.Parameters.AddWithValue("@id_presensi", txtIdPresensi.Text.Trim());
+                        
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Data berhasil dihapus.");
                         LoadData();
@@ -182,5 +173,23 @@ namespace PABD
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
         }
+
+        private void dgvPresensi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = dgvPresensi.Rows[e.RowIndex];
+                   // untuk Edit/Hapus
+                    dtpTanggal.Value = Convert.ToDateTime(row.Cells["Tanggal"].Value);
+                    cmbStatus.SelectedItem = row.Cells["Status"].Value.ToString();
+                    txtNIM.Text = row.Cells["NIM"].Value.ToString();
+                    txtIDJadwal.Text = row.Cells["ID Jadwal"].Value.ToString();
+                }
+            
+
+        }
+
+        
     }
 }
