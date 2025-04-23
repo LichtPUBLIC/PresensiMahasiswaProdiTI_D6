@@ -1,30 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 
 namespace PABD
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "Server=MSI\\DAFFAALYANDRA;Database=PresensiMahasiswaProdiTI;User Id=SA;Password=isiPasswordKamu;";
+        private string connectionString = "Server=MSI\\DAFFAALYANDRA;Database=PresensiMahasiswaProdiTI;User Id=SA;Password=Gajah_duduk123.;";
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Foem1_load(object sennder, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
-
-           

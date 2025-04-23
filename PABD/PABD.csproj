@@ -46,16 +46,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dosen.Designer.cs">
+      <DependentUpon>Dosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kelola Data Jadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kelola Data Jadwal.Designer.cs">
+      <DependentUpon>Kelola Data Jadwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kelola Data Mahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kelola Data Mahasiswa.Designer.cs">
+      <DependentUpon>kelola Data Mahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kelola Data Matakuliah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kelola Data Matakuliah.Designer.cs">
+      <DependentUpon>Kelola Data Matakuliah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kelola Data Presensi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kelola Data Presensi.Designer.cs">
+      <DependentUpon>Kelola Data Presensi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kelola_Data_Dosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kelola_Data_Dosen.Designer.cs">
+      <DependentUpon>Kelola_Data_Dosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosen.resx">
+      <DependentUpon>Dosen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kelola Data Jadwal.resx">
+      <DependentUpon>Kelola Data Jadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kelola Data Mahasiswa.resx">
+      <DependentUpon>kelola Data Mahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kelola Data Matakuliah.resx">
+      <DependentUpon>Kelola Data Matakuliah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kelola Data Presensi.resx">
+      <DependentUpon>Kelola Data Presensi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kelola_Data_Dosen.resx">
+      <DependentUpon>Kelola_Data_Dosen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
